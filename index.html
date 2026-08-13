@@ -1416,6 +1416,22 @@ reviews: [
           mistake: "",
           reviews: [],
         },
+        {
+          id: "pg-68936",
+          title: "쿼드압축 후 개수 세기",
+          url: "https://school.programmers.co.kr/learn/courses/30/lessons/68936",
+          codeUrl: "",
+          level: 2,
+          lang: "java",
+          tags: ["재귀", "분할정복", "완전탐색"],
+          date: "2026-08-13",
+          struggled: "hint",
+          cause: "impl",
+          idea: "topdown 재귀로 4개 사분면을 재귀 호출 후, 4개 결과가 모두 같으면 합치고 다르면 합산. 각 단계에서 [0의개수, 1의개수] 배열을 반환.",
+          complexity: "O(n² log n)",
+          mistake: "compress 함수에서 배열을 인자로 넘길지 멤버변수로 할지 몰랐고, 4개 비교 로직을 어떻게 쓸지 불명확했다.",
+          reviews: []
+        }
       ];
       /* ═══════════════════════════════════════════════════════
    ▲ 데이터 끝 ▲   아래는 건드릴 필요 없습니다.
