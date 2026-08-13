@@ -1356,6 +1356,22 @@ reviews: [
    ═══════════════════════════════════════════════════════ */
       const PROBLEMS = [
         {
+          id: "pg-178870",
+          title: "연속된 부분 수열의 합",
+          url: "https://school.programmers.co.kr/learn/courses/30/lessons/178870",
+          codeUrl: "",
+          level: 2,
+          lang: "java",
+          tags: ["투포인터", "슬라이딩윈도우"],
+          date: "2026-08-13",
+          struggled: "hint",
+          cause: "edge",
+          idea: "투 포인터로 슬라이딩 윈도우 유지. 합이 k와 같아질 때마다 최단 길이 갱신, k보다 크면 시작점을 전진시켜 합을 줄임.",
+          complexity: "O(n)",
+          mistake: "최단 길이 초기값을 배열 길이+1로만 두고 길이 1짜리 구간 갱신 조건을 꼼꼼히 안 따져서 [1,1,1,1,1], k=5 같은 케이스에서 오답.",
+          reviews: []
+        },
+        {
           id: "pg-42883",
           title: "큰 수 만들기",
           url: "https://school.programmers.co.kr/learn/courses/30/lessons/42883",
