@@ -1,0 +1,53 @@
+name: BaekjoonHub 기록 스텁 PR
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  add-stub:
+    if: contains(github.event.head_commit.message, '-BaekjoonHub')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 스텁 생성
+        id: gen
+        run: node scripts/baekjoon-hub-stub.js
+
+      - name: PR 생성
+        if: steps.gen.outputs.created == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "docs(log): ${{ steps.gen.outputs.date_short }} - ${{ steps.gen.outputs.titles }}"
+          branch: log-stub/${{ steps.gen.outputs.branch_suffix }}
+          title: "docs(log): ${{ steps.gen.outputs.date_short }} - ${{ steps.gen.outputs.titles }}"
+          labels: log-stub
+          body: |
+            BaekjoonHub 커밋을 감지해 `index.html`을 수정했습니다: `${{ steps.gen.outputs.ids }}`
+
+            - 신규 문제 ${{ steps.gen.outputs.new_count }}건 — `PROBLEMS`에 스텁 항목 추가
+            - 재풀이 ${{ steps.gen.outputs.review_count }}건 — 기존 항목의 `reviews[]`에 회차 추가
+
+            머지 전에 아래를 [기록 지침](../blob/main/docs/RECORDING_GUIDE.md)에 따라 채워주세요.
+
+            **신규 문제**
+            - [ ] `tags` — 용어 사전에서 1~3개
+            - [ ] `struggled` — solo / hint / answer
+            - [ ] `cause` — hint·answer면 필수
+            - [ ] `idea` — 한두 문장
+            - [ ] `complexity`
+            - [ ] `mistake` — 없으면 빈 문자열 유지
+            - [ ] `lang` — 자동 추정값 확인 (파일 확장자 기준)
+
+            **재풀이**
+            - [ ] 접근이 달라졌으면 `idea`/`complexity` 채우기, 같으면 `{ date: "..." }`만 유지
