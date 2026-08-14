@@ -1356,6 +1356,22 @@ reviews: [
    ═══════════════════════════════════════════════════════ */
       const PROBLEMS = [
         {
+          id: "pg-388353",
+          title: "지게차와 크레인",
+          url: "https://school.programmers.co.kr/learn/courses/30/lessons/388353",
+          codeUrl: "",
+          level: 2,
+          lang: "java",
+          tags: ["구현", "DFS", "시뮬레이션"],
+          date: "2026-08-14",
+          struggled: "hint",
+          cause: "impl",
+          idea: "문자별 좌표를 Queue로 관리하고, 지게차는 요청 시작 시점에 접근 가능한 대상만 먼저 모아 제거한다. 제거로 새로 외부와 연결된 빈 공간은 DFS로 접근 가능 상태를 전파한다.",
+          complexity: "O(nm + 요청별 해당 문자 좌표 탐색)",
+          mistake: "제거 중 isPossible을 바로 갱신해 같은 요청에서 새로 노출된 컨테이너까지 제거했고, DFS 방문 처리 순서 때문에 순환 재귀도 발생했다.",
+          reviews: []
+        },
+        {
           id: "pg-388352",
           title: "비밀 코드 해독",
           url: "https://school.programmers.co.kr/learn/courses/30/lessons/388352",
