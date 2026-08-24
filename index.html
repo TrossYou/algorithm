@@ -1356,6 +1356,22 @@ reviews: [
    ═══════════════════════════════════════════════════════ */
       const PROBLEMS = [
         {
+          id: "pg-42627",
+          title: "디스크 컨트롤러",
+          url: "https://school.programmers.co.kr/learn/courses/30/lessons/42627",
+          codeUrl: "",
+          level: 3,
+          lang: "java",
+          tags: ["힙", "정렬"],
+          date: "2026-08-24",
+          struggled: "hint",
+          cause: "perf",
+          idea: "요청 시간 순 PQ와 실행 가능 작업용 PQ를 분리하고, 현재 시각까지 들어온 작업 중 소요 시간이 가장 짧은 작업을 선택한다.",
+          complexity: "O(n log n)",
+          mistake: "아직 실행 불가능한 작업을 같은 PQ에서 반복해서 꺼냈다 넣어 시간초과가 났고, 작업이 없는 구간의 시간 점프도 따로 처리해야 했다.",
+          reviews: []
+        },
+        {
           id: "pg-42584",
           title: "주식가격",
           url: "https://school.programmers.co.kr/learn/courses/30/lessons/42584",
