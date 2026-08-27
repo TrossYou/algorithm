@@ -1362,13 +1362,13 @@ reviews: [
           codeUrl: "",
           level: 3,
           lang: "java",
-          tags: [], // TODO: 용어 사전에서 1~3개
+          tags: ["DFS", "백트래킹", "HashMap"],
           date: "2026-08-27",
-          struggled: "solo", // TODO: solo | hint | answer
-          cause: null, // TODO: hint/answer면 approach | impl | edge | perf | misread
-          idea: "", // TODO
-          complexity: "", // TODO
-          mistake: "",
+          struggled: "hint",
+          cause: "impl",
+          idea: "출발지별 도착지를 정렬해 저장하고, 티켓을 제거·복구하며 사전순으로 DFS 탐색",
+          complexity: "최악 O(E! · E), E=티켓 수",
+          mistake: "for-each 순회 중 List를 직접 수정했고, 모든 도시가 아닌 모든 티켓 사용이 종료 조건임을 놓침",
           reviews: []
         },
         {
