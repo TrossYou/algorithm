@@ -1362,13 +1362,13 @@ reviews: [
           codeUrl: "",
           level: 2,
           lang: "java",
-          tags: [], // TODO: 용어 사전에서 1~3개
+          tags: ["DFS", "백트래킹", "소수판별"],
           date: "2026-08-27",
-          struggled: "solo", // TODO: solo | hint | answer
-          cause: null, // TODO: hint/answer면 approach | impl | edge | perf | misread
-          idea: "", // TODO
-          complexity: "", // TODO
-          mistake: "",
+          struggled: "hint",
+          cause: "approach",
+          idea: "DFS로 숫자 조각의 모든 순열을 만들고 Set으로 중복 제거 후 sqrt 범위까지만 소수 판별",
+          complexity: "O(N! · sqrt(M)), N=숫자 개수, M=생성된 수",
+          mistake: "모든 길이의 순열 생성과 중복 숫자 제거를 함께 처리하는 접근에서 AI 도움을 받음",
           reviews: []
         },
         {
