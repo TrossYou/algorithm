@@ -1357,18 +1357,18 @@ reviews: [
       const PROBLEMS = [
         {
           id: "pg-17683",
-          title: "［3차］ 방금그곡",
+          title: "[3차] 방금그곡",
           url: "https://school.programmers.co.kr/learn/courses/30/lessons/17683",
           codeUrl: "",
           level: 2,
           lang: "java",
-          tags: [], // TODO: 용어 사전에서 1~3개
+          tags: ["문자열", "구현", "정렬"],
           date: "2026-08-28",
-          struggled: "solo", // TODO: solo | hint | answer
-          cause: null, // TODO: hint/answer면 approach | impl | edge | perf | misread
-          idea: "", // TODO
-          complexity: "", // TODO
-          mistake: "",
+          struggled: "hint",
+          cause: "edge",
+          idea: "#이 붙은 음을 한 문자로 치환한 뒤 실제 재생 시간만큼 멜로디를 구성하고, 재생 시간이 긴 순서로 확인해 포함 여부를 판단.",
+          complexity: "O(n log n + nL)",
+          mistake: "한 테스트케이스의 반례를 받아 놓친 예외 상황을 확인하고 디버깅으로 수정.",
           reviews: []
         },
         {
