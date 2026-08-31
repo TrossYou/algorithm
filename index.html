@@ -1355,7 +1355,23 @@ reviews: [
    ▼ 데이터 — 새 문제는 여기 맨 위에 추가 ▼
    ═══════════════════════════════════════════════════════ */
       const PROBLEMS = [
-          {
+        {
+          id: "pg-60061",
+          title: "기둥과 보 설치",
+          url: "https://school.programmers.co.kr/learn/courses/30/lessons/60061",
+          codeUrl: "",
+          level: 3,
+          lang: "java",
+          tags: ["구현", "시뮬레이션"],
+          date: "2026-08-31",
+          struggled: "hint",
+          cause: "impl",
+          idea: "기둥/보를 각각 boolean 배열로 관리. 설치는 조건 검사 후 추가, 제거는 먼저 지우고 전체 구조물을 전수 검증해 실패하면 롤백.",
+          complexity: "O(m·n²)",
+          mistake: "한 배열에 0/1로 저장해 같은 좌표에 기둥과 보가 함께 있는 상태를 표현하지 못했다.",
+          reviews: []
+        },
+        {
           id: "pg-42626",
           title: "더 맵게",
           url: "https://school.programmers.co.kr/learn/courses/30/lessons/42626",
