@@ -1356,6 +1356,22 @@ reviews: [
    ═══════════════════════════════════════════════════════ */
       const PROBLEMS = [
         {
+          id: "pg-42746",
+          title: "가장 큰 수",
+          url: "https://school.programmers.co.kr/learn/courses/30/lessons/42746",
+          codeUrl: "",
+          level: 2,
+          lang: "java",
+          tags: ["정렬", "문자열"],
+          date: "2026-08-31",
+          struggled: "hint",
+          cause: "impl",
+          idea: "각 수를 문자열로 만들어 4번 이어붙인 뒤 사전순 내림차순 정렬. 자리수를 맞춰야 앞자리 우선 비교가 성립한다.",
+          complexity: "O(n log n)",
+          mistake: "Comparator 람다와 String.compareTo 사용법에서 막혔고, 전부 0인 경우 \"000\"이 나오는 처리를 따로 해야 했다.",
+          reviews: [{ date: "2026-08-31", idea: "래퍼 클래스 없이 (b+a) vs (a+b) 비교로 정렬 기준을 직접 만들어 자리수 맞춤이 불필요해졌다", complexity: "O(n log n)" }]
+        },
+        {
           id: "pg-60061",
           title: "기둥과 보 설치",
           url: "https://school.programmers.co.kr/learn/courses/30/lessons/60061",
