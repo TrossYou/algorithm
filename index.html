@@ -1357,18 +1357,18 @@ reviews: [
       const PROBLEMS = [
         {
           id: "pg-160585",
-          title: "혼자서 하는 틱택토",
+          title: "혼자서 하는 틱택토",
           url: "https://school.programmers.co.kr/learn/courses/30/lessons/160585",
           codeUrl: "",
           level: 2,
           lang: "java",
-          tags: [], // TODO: 용어 사전에서 1~3개
+          tags: ["구현", "시뮬레이션"],
           date: "2026-09-01",
-          struggled: "solo", // TODO: solo | hint | answer
-          cause: null, // TODO: hint/answer면 approach | impl | edge | perf | misread
-          idea: "", // TODO
-          complexity: "", // TODO
-          mistake: "",
+          struggled: "hint",
+          cause: "edge",
+          idea: "O와 X의 개수가 번갈아 둔 조건을 만족하는지 확인하고, 승리한 문자가 실제 마지막 차례의 문자와 일치하는지 검사한다.",
+          complexity: "O(1)",
+          mistake: "한 문자가 두 개의 승리 라인을 동시에 만들 수도 있는데, oSuccessCnt + xSuccessCnt >= 2 자체를 불가능한 상태로 판단했다.",
           reviews: []
         },
         {
