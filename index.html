@@ -1357,18 +1357,18 @@ reviews: [
       const PROBLEMS = [
         {
           id: "pg-12900",
-          title: "2 x n 타일링",
-          url: "https://school.programmers.co.kr/learn/courses/30/lessons/12900",
+          title: "2 x n 타일링",
+          url: "https://school.programmers.co.kr/learn/courses/30/lessons/12900?language=java#",
           codeUrl: "",
           level: 2,
           lang: "java",
-          tags: [], // TODO: 용어 사전에서 1~3개
+          tags: ["DP", "수학"],
           date: "2026-09-09",
-          struggled: "solo", // TODO: solo | hint | answer
-          cause: null, // TODO: hint/answer면 approach | impl | edge | perf | misread
-          idea: "", // TODO
-          complexity: "", // TODO
-          mistake: "",
+          struggled: "hint",
+          cause: "approach",
+          idea: "마지막에 1칸을 붙이는 경우와 2칸을 붙이는 경우로 나누면 dp[n] = dp[n-1] + dp[n-2]가 된다.",
+          complexity: "O(n), 공간 O(1)",
+          mistake: "조합으로 직접 경우의 수를 계산하려다 큰 수와 모듈러 나눗셈 문제에 막혔다.",
           reviews: []
         },
         {
