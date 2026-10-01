@@ -1357,17 +1357,17 @@ reviews: [
       const PROBLEMS = [
         {
           id: "pg-42577",
-          title: "전화번호 목록",
-          url: "https://school.programmers.co.kr/learn/courses/30/lessons/42577",
+          title: "전화번호 목록",
+          url: "https://school.programmers.co.kr/learn/courses/30/lessons/42577?language=java",
           codeUrl: "",
           level: 2,
           lang: "java",
-          tags: [], // TODO: 용어 사전에서 1~3개
+          tags: ["정렬", "문자열"],
           date: "2026-10-01",
-          struggled: "solo", // TODO: solo | hint | answer
-          cause: null, // TODO: hint/answer면 approach | impl | edge | perf | misread
-          idea: "", // TODO
-          complexity: "", // TODO
+          struggled: "solo",
+          cause: null,
+          idea: "전화번호를 사전순 정렬하면 접두어 관계가 있는 문자열은 서로 인접하므로, 인접한 두 문자열만 비교한다.",
+          complexity: "O(n log n)",
           mistake: "",
           reviews: []
         },
