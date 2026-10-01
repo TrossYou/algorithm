@@ -1,12 +1,18 @@
-# algorithm
+<div align="center">
 
-프로그래머스 · 백준 · SWEA 풀이 기록. 주 언어는 Java입니다.
+# 프로그래머스 · 백준 · SWEA 풀이와 학습 로그
 
-**[📊 학습 로그 대시보드](https://trossyou.github.io/algorithm/)**
+### algorithm
 
-풀이 코드는 이 저장소에, 접근 방식과 막힌 지점은 대시보드에 남깁니다.
+2024– · 개인 · Java
+
+<a href="https://trossyou.github.io/algorithm/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Live-4C6CB3?style=for-the-badge"><img src="https://img.shields.io/badge/Live-2E4A8B?style=for-the-badge" alt="Live"></picture></a>
+
+</div>
 
 ---
+
+풀이 코드는 이 저장소에, 접근 방식과 막힌 지점은 [학습 로그 대시보드](https://trossyou.github.io/algorithm/)에 남깁니다.
 
 ## 기록 방식
 
