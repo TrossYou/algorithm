@@ -6,8 +6,7 @@ class Solution {
         Map<String, Integer> map = new HashMap<>();
         
         for(String[] strArr: clothes){
-            map.putIfAbsent(strArr[1], 0);
-            map.put(strArr[1], map.get(strArr[1])+1);
+            map.put(strArr[1], map.getOrDefault(strArr[1], 0)+1);
         }
         
         
