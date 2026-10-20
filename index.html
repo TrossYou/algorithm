@@ -1355,23 +1355,39 @@ reviews: [
    ▼ 데이터 — 새 문제는 여기 맨 위에 추가 ▼
    ═══════════════════════════════════════════════════════ */
       const PROBLEMS = [
-        {
+         {
           id: "pg-42842",
           title: "카펫",
           url: "https://school.programmers.co.kr/learn/courses/30/lessons/42842",
           codeUrl: "",
           level: 2,
           lang: "java",
-          tags: [], // TODO: 용어 사전에서 1~3개
-          date: "2026-10-13",
-          struggled: "solo", // TODO: solo | hint | answer
-          cause: null, // TODO: hint/answer면 approach | impl | edge | perf | misread
-          idea: "", // TODO
-          complexity: "", // TODO
+          tags: ["완전탐색", "수학"],
+          date: "2026-10-20",
+          struggled: "solo",
+          cause: null,
+          idea: "yellow의 약수 쌍(w, h)을 √yellow까지 훑고, 테두리 2(w+h)+4가 brown과 같은 쌍을 찾는다. 답은 (w+2, h+2).",
+          complexity: "O(√yellow)",
+          mistake: "",
+          reviews: []
+         },
+         {
+          id: "pg-12913",
+          title: "땅따먹기",
+          url: "https://school.programmers.co.kr/learn/courses/30/lessons/12913",
+          codeUrl: "",
+          level: 2,
+          lang: "java",
+          tags: ["DP"],
+          date: "2026-10-20",
+          struggled: "solo",
+          cause: null,
+          idea: "각 칸에 '이전 행에서 같은 열을 제외한 최댓값'을 누적하는 행 단위 DP. 마지막 행의 최댓값이 답.",
+          complexity: "O(N) (열 4개 고정, 행당 16회 비교)",
           mistake: "",
           reviews: []
         },
-                {
+        {
           id: "pg-42586",
           title: "기능개발",
           url: "https://school.programmers.co.kr/learn/courses/30/lessons/42586",
