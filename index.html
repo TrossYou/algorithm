@@ -1362,16 +1362,16 @@ reviews: [
           codeUrl: "",
           level: 2,
           lang: "java",
-          tags: [], // TODO: 용어 사전에서 1~3개
+          tags: ["DP"],
           date: "2026-10-20",
-          struggled: "solo", // TODO: solo | hint | answer
-          cause: null, // TODO: hint/answer면 approach | impl | edge | perf | misread
-          idea: "", // TODO
-          complexity: "", // TODO
+          struggled: "solo",
+          cause: null,
+          idea: "각 칸에 '이전 행에서 같은 열을 제외한 최댓값'을 누적하는 행 단위 DP. 마지막 행의 최댓값이 답.",
+          complexity: "O(N) (열 4개 고정, 행당 16회 비교)",
           mistake: "",
           reviews: []
         },
-                {
+        {
           id: "pg-42586",
           title: "기능개발",
           url: "https://school.programmers.co.kr/learn/courses/30/lessons/42586",
